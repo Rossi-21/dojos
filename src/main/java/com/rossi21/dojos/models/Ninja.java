@@ -41,7 +41,7 @@ public class Ninja {
     private Date createdAt;
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date updatedAt;
-    //Allows our one to many connection with the Dojo class
+    //Allows our many to one connection with the other class
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="dojo_id")
     private Dojo dojo;

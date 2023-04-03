@@ -1,4 +1,4 @@
-package com.rossi21.dojos.models;ß
+package com.rossi21.dojos.models;
 import java.util.Date;
 import java.util.List;
 
