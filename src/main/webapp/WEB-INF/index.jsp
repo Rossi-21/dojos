@@ -12,13 +12,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Taco</title>
+    <title>Dojo</title>
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css"> <!-- change to match your file/naming structure -->
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
 <body>
-	<h1>Hello</h1>
+	<div>
+		<h1>Create an Dojo</h1>
+		<form:form class="form" action="/dojos/create" method="post" modelAttribute="dojo">
+			<div>
+				<form:label class="fw-bold mt-2 form-label" path='name'>Dojo Name:</form:label>
+				<form:errors class="text-danger" path="name"/>
+	   			<form:input class="form-control" path='name'/>
+			</div>
+	   		<input class="mt-3 border border-dark rounded" type="submit" value="Submit"/>
+   		</form:form>
+		
+	</div>
 </body>
 </html>

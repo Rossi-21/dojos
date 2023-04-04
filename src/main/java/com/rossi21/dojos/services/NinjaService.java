@@ -3,9 +3,12 @@ package com.rossi21.dojos.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.rossi21.dojos.models.Ninja;
 import com.rossi21.dojos.repositories.NinjaRepository;
 
+@Service
 public class NinjaService {
 	 // adding the travel repository as a dependency
     private final NinjaRepository ninjaRepository;
@@ -30,7 +33,7 @@ public class NinjaService {
             return null;
         }
     }
-	public Ninja updateTravel(Ninja n) {
+	public Ninja updateNinja(Ninja n) {
 		return ninjaRepository.save(n);
 	}
 	public void deleteNinja(Long id) {

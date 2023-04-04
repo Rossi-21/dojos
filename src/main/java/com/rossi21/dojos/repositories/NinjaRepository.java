@@ -10,7 +10,5 @@ import com.rossi21.dojos.models.Ninja;
 @Repository
 public interface NinjaRepository extends CrudRepository<Ninja, Long> {
 	List<Ninja> findAll();
-	List<Ninja> findByFirst_NameContaining(String search);
-	Long countByFirst_NameContaining(String search);
-	Long deleteByFirst_NameStartingWith(String search);
+	
 }
