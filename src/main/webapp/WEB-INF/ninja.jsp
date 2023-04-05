@@ -26,7 +26,7 @@
 				<form:label class="fw-bold mt-2 form-label" path='dojo'>Dojo Name:</form:label>
 				<form:select path="dojo">
 					<c:forEach var="dojos" items = "${dojos}">
-						<option value="${dojo.id}"><c:out value="${dojos.name}"/></option>
+						<option value="${dojos.id}"><c:out value="${dojos.name}"/></option>
 					</c:forEach>
 				</form:select>
 			</div>

@@ -49,10 +49,11 @@ public class Ninja {
     
     public Ninja() {
     }
-    public Ninja(String first_name, String last_name, Integer age) {
+    public Ninja(String first_name, String last_name, Integer age, Dojo dojo) {
         this.first_name = first_name;
         this.last_name = last_name;
-        this.age = age;    
+        this.age = age;
+        this.dojo = dojo;
     }
     
     @PrePersist
@@ -105,6 +106,7 @@ public class Ninja {
 	public void setDojo(Dojo dojo) {
 		this.dojo = dojo;
 	}
+	
     
 
 }

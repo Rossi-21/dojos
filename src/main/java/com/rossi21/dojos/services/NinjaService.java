@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.rossi21.dojos.models.Dojo;
 import com.rossi21.dojos.models.Ninja;
 import com.rossi21.dojos.repositories.NinjaRepository;
 
@@ -39,4 +40,8 @@ public class NinjaService {
 	public void deleteNinja(Long id) {
 		ninjaRepository.deleteById(id);
 	}
+	
+	public List<Ninja> byDojo(Dojo dojo) {
+    	return ninjaRepository.findAllByDojo(dojo);
+    }
 }
